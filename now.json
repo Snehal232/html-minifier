@@ -1,1 +1,16 @@
-{"version":2,"name":"html-minifier","builds":[{"src":"index.php","use":"@now/html-minifier"}]}
+{
+  "version": 2,
+  "builds": [
+    { "src": "wp-config.php", "use": "@now/wordpress" }
+  ],
+  "routes": [
+    { "src": "/wp-admin/?", "dest": "index.php" },
+    { "src": ".*\\.php$", "dest": "index.php" }
+  ],
+  "env": {
+    "DB_NAME": "blog",
+    "DB_USER": "root",
+    "DB_PASSWORD": "Technokeen@123",
+    "DB_HOST": "SG-WordPress-741-master.servers.mongodirector.com"
+  }
+}
