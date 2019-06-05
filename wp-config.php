@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '$_ENV');
+define('SECURE_AUTH_KEY',  '$_ENV');
+define('LOGGED_IN_KEY',    '$_ENV');
+define('NONCE_KEY',        '$_ENV');
+define('AUTH_SALT',        '$_ENV');
+define('SECURE_AUTH_SALT', '$_ENV');
+define('LOGGED_IN_SALT',   '$_ENV');
+define('NONCE_SALT',       '$_ENV');
 
 /**#@-*/
 
@@ -79,11 +79,17 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
+define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
+define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
+define( 'MYSQL_SSL_CA', ABSPATH . 'ca.pem' );
+define( 'MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL );
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
