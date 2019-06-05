@@ -5,7 +5,7 @@
     { "src": "wp-config.php", "use": "@now/wordpress", "config": { "maxLambdaSize": "40mb" }}
   ],
   "routes": [
-    { "src": "/wp-admin/", "dest": "index.php" },
+    { "src": "", "dest": "index.php" },
     { "src": ".*\\.php$", "dest": "index.php" }
   ],
   "env": {
