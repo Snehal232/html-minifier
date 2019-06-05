@@ -78,7 +78,7 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
-
+$_SERVER['HTTP_HOST'] = 'html-minifier-d5oxhsjw6.now.sh';
 define( 'WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] );
 define( 'WP_CONTENT_URL', 'https://' . $_SERVER['HTTP_HOST'] . '/wp-content' );
