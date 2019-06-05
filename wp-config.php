@@ -29,7 +29,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', 'Technokeens@123');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'SG-WordPress-741-master.servers.mongodirector.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
