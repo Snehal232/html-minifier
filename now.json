@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "html-minifier",
   "builds": [
     { "src": "wp-config.php", "use": "@now/wordpress", "config": { "maxLambdaSize": "40mb" }}
   ],
