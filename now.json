@@ -9,9 +9,9 @@
     { "src": ".*\\.php$", "dest": "index.php" }
   ],
   "env": {
-    "DB_NAME": "blog",
-    "DB_USER": "root",
-    "DB_PASSWORD": "Technokeens@123",
+    "DB_NAME": "WordPress",
+    "DB_USER": "sgroot",
+    "DB_PASSWORD": "aHnUxwVlyReMC9-G",
     "DB_HOST": "SG-WordPress-741-master.servers.mongodirector.com"
   }
 }
